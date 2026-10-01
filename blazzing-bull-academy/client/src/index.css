@@ -1,0 +1,18 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{@apply bg-ink text-white font-sans antialiased}
+:focus-visible{outline:2px solid #F5B301;outline-offset:3px}
+@layer components{
+ .card{@apply rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-md transition duration-300 hover:border-gold/40 hover:-translate-y-1}
+ .btn{@apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 font-semibold transition duration-200}
+ .btn-gold{@apply btn bg-gold text-black hover:bg-gold-soft shadow-[0_0_35px_-8px_rgba(245,179,1,0.85)]}
+ .btn-line{@apply btn border border-white/20 hover:border-gold hover:text-gold}
+ .sec{@apply mx-auto max-w-7xl px-5 py-20 md:py-28}
+ .h2{@apply font-display text-3xl md:text-5xl font-bold tracking-tight}
+ .metric-pill{@apply rounded-full border border-white/10 bg-white/[0.03] px-3 py-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]}
+ .hero-panel{@apply shadow-[0_30px_80px_rgba(0,0,0,0.45),0_0_0_1px_rgba(255,255,255,0.04)]}
+}
+.reveal{opacity:0;transform:translateY(16px);transition:.6s ease}.reveal.in{opacity:1;transform:none}
+@keyframes draw{to{stroke-dashoffset:0}}
+.draw{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 3s ease forwards}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.draw{stroke-dashoffset:0}}
