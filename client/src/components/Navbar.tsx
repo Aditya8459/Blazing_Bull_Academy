@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${sc || open ? 'bg-black/80 backdrop-blur-xl border-b border-white/10' : 'bg-transparent'}`}>
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5">
-        <button onClick={() => nav('home')} aria-label="Blazzing Bull Academy home"><img src={SITE.logo} alt="Blazzing Bull Academy logo" className="h-11 w-11 rounded-lg object-cover" /></button>
+        <button onClick={() => nav('home')} aria-label="Blazing Bull Academy home"><img src={SITE.logo} alt="Blazing Bull Academy logo" className="h-11 w-11 rounded-lg object-cover" /></button>
         <nav aria-label="Main" className="hidden xl:flex gap-5 text-sm text-white/75">
           {NAV.map(([l, id]) => <button key={id} onClick={() => nav(id)} className="hover:text-gold transition">{l}</button>)}</nav>
         <div className="hidden xl:flex items-center gap-3">

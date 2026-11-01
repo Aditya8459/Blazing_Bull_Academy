@@ -57,11 +57,11 @@ export default function Registration() {
   };
   const inp = 'w-full rounded-xl border border-white/15 bg-black/40 px-4 py-3 text-base focus:border-gold';
   return (<section id="register" className="sec max-w-4xl">
-    <div className="mb-10 text-center"><h2 className="h2">Start Your Trading Learning Journey</h2><p className="mt-3 text-white/60">Register for the 60-Day Blazzing Bull Academy Program</p>
+    <div className="mb-10 text-center"><h2 className="h2">Start Your Trading Learning Journey</h2><p className="mt-3 text-white/60">Register for the 60-Day Blazing Bull Academy Program</p>
       <p className="mt-4 text-gold">Course Fee: {SITE.fee} &nbsp;|&nbsp; Duration: {SITE.duration}</p></div>
     <div className="card p-6 md:p-10 hover:translate-y-0">
     {done ? (<div role="status" className="py-8 text-center"><h3 className="font-display text-2xl font-bold text-bull">Registration Successful! We will contact you soon.</h3>
-      <p className="mx-auto mt-3 max-w-md text-white/70">Thank you for registering with Blazzing Bull Academy. Our team will contact you shortly.</p>
+      <p className="mx-auto mt-3 max-w-md text-white/70">Thank you for registering with Blazing Bull Academy. Our team will contact you shortly.</p>
       <div className="mt-8 flex flex-wrap justify-center gap-3"><a className="btn-gold" href={SITE.tel}>Call Us</a><a className="btn-line" href={SITE.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp Us</a><a className="btn-line" href={SITE.telegram} target="_blank" rel="noopener noreferrer">Join Telegram</a></div></div>) : (
     <form ref={formRef} onSubmit={handleSubmit} noValidate className="grid gap-5 md:grid-cols-2">
       <input type="hidden" name="submission_type" value="Registration" />

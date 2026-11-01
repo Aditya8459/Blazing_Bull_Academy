@@ -10,9 +10,9 @@ export default function Hero() {
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 px-5 lg:grid-cols-[1fr_0.9fr]">
         <div className="max-w-xl">
           <div className="inline-flex items-center gap-3 rounded-full border border-gold/30 bg-black/20 px-3 py-2 backdrop-blur-sm">
-            <img src={SITE.logo} alt="Blazzing Bull Academy logo" className="h-12 w-12 rounded-xl border border-gold/40 object-cover" />
+            <img src={SITE.logo} alt="Blazing Bull Academy logo" className="h-12 w-12 rounded-xl border border-gold/40 object-cover" />
             <div className="text-left">
-              <p className="text-[10px] uppercase tracking-[0.25em] text-white/50">Blazzing Bull</p>
+              <p className="text-[10px] uppercase tracking-[0.25em] text-white/50">Blazing Bull</p>
               <p className="text-sm font-semibold text-gold">Academy</p>
             </div>
           </div>
@@ -81,4 +81,3 @@ export default function Hero() {
     </section>
   );
 }
-

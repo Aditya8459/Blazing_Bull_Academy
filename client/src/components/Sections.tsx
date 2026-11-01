@@ -8,7 +8,7 @@ export function About() {
   const pts = [['Structured Learning', L.ListChecks], ['Practical Market Analysis', L.LineChart], ['Risk Management', L.ShieldCheck], ['Trading Discipline', L.Gauge]] as const;
   return (<section id="about" className="sec"><Reveal className="grid items-center gap-12 lg:grid-cols-2">
     <div><h2 className="h2">Learn Trading With Structure, Not Guesswork</h2>
-      <p className="mt-5 text-white/65">Blazzing Bull Academy is a Forex trading education platform focused on helping students understand market structure, technical analysis, trading strategies and risk management.</p>
+      <p className="mt-5 text-white/65">Blazing Bull Academy is a Forex trading education platform focused on helping students understand market structure, technical analysis, trading strategies and risk management.</p>
       <p className="mt-4 text-white/65">Students learn how to analyze markets, build structured trade plans and develop disciplined trading habits.</p></div>
     <div className="grid grid-cols-2 gap-4">{pts.map(([t, I]) => <div key={t} className="card p-6"><I className="text-gold" /><p className="mt-3 font-semibold">{t}</p></div>)}</div>
   </Reveal></section>);
@@ -23,7 +23,7 @@ export function Modules() {
 export function Courses() {
   return (<section id="courses" className="sec"><Heading title="Our Trading Program" />
     <Reveal><div className="card mx-auto max-w-3xl overflow-hidden border-gold/30 p-8 md:p-10 hover:translate-y-0">
-      <p className="text-sm text-gold">Blazzing Bull Academy</p><h3 className="mt-1 font-display text-3xl font-bold">60-Day Forex Trading Program</h3>
+      <p className="text-sm text-gold">Blazing Bull Academy</p><h3 className="mt-1 font-display text-3xl font-bold">60-Day Forex Trading Program</h3>
       <div className="mt-4 flex flex-wrap items-baseline gap-x-6"><span className="font-display text-5xl font-extrabold text-gold">{SITE.fee}</span><span className="text-white/60">Duration: {SITE.duration}</span></div>
       <ul className="mt-6 grid gap-3 sm:grid-cols-2">{INCLUDES.map(i => <li key={i} className="flex gap-2 text-white/80"><L.Check size={18} className="mt-0.5 shrink-0 text-bull" />{i}</li>)}</ul>
       <button className="btn-gold mt-8 w-full sm:w-auto" onClick={() => go('register')}>Register Now</button>
@@ -48,14 +48,14 @@ export function Mentors() {
 }
 
 export function Why() {
-  return (<section id="why" className="sec"><Heading title="Why Choose Blazzing Bull" />
+  return (<section id="why" className="sec"><Heading title="Why Choose Blazing Bull" />
     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{WHY.map(([t, d]) => <Reveal key={t}><div className="card h-full p-6"><L.BadgeCheck className="text-gold" /><h3 className="mt-3 font-semibold">{t}</h3><p className="mt-1 text-sm text-white/60">{d}</p></div></Reveal>)}</div>
     <p className="mt-10 rounded-2xl border border-dashed border-white/15 p-6 text-center text-sm text-white/40">Student testimonial will be added here.</p></section>);
 }
 
 export function Pricing() {
   return (<section id="pricing" className="sec"><Reveal><div className="relative mx-auto max-w-xl rounded-3xl bg-gradient-to-b from-gold/60 to-gold/5 p-px shadow-[0_0_80px_-20px_#F5B301]">
-    <div className="rounded-3xl bg-panel p-10 text-center"><p className="text-xs tracking-widest text-gold">60-DAY PROGRAM</p><h2 className="mt-2 font-display text-3xl font-bold">Blazzing Bull Academy</h2>
+    <div className="rounded-3xl bg-panel p-10 text-center"><p className="text-xs tracking-widest text-gold">60-DAY PROGRAM</p><h2 className="mt-2 font-display text-3xl font-bold">Blazing Bull Academy</h2>
       <p className="mt-6 font-display text-6xl font-extrabold text-gold">{SITE.fee}</p><p className="mt-1 text-white/60">Duration: {SITE.duration}</p>
       <button className="btn-gold mt-8 w-full" onClick={() => go('register')}>Secure Your Registration</button>
       <div className="mt-4"><Disclaimer short /></div></div></div></Reveal></section>);
@@ -71,10 +71,10 @@ export function FAQ() {
 }
 
 export function Location() {
-  return (<section id="location" className="sec"><Heading title="Find Blazzing Bull Academy" />
+  return (<section id="location" className="sec"><Heading title="Find Blazing Bull Academy" />
     <Reveal><div className="card grid overflow-hidden md:grid-cols-2 hover:translate-y-0">
       <div className="relative min-h-[220px] bg-[linear-gradient(rgba(245,179,1,.08)_1px,transparent_1px),linear-gradient(90deg,rgba(245,179,1,.08)_1px,transparent_1px)] bg-[size:28px_28px]"><L.MapPin size={56} className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-gold drop-shadow-[0_0_20px_#F5B301]" aria-hidden /></div>
-      <div className="p-8"><h3 className="font-display text-2xl font-semibold">Blazzing Bull Academy</h3><p className="mt-2 text-white/60">Blazzing Bull Academy — View Location on Google Maps</p>
+      <div className="p-8"><h3 className="font-display text-2xl font-semibold">Blazing Bull Academy</h3><p className="mt-2 text-white/60">{SITE.address}</p>
         <div className="mt-6 flex flex-wrap gap-3"><a className="btn-gold" href={SITE.maps} target="_blank" rel="noopener noreferrer">Open in Google Maps</a><a className="btn-line" href={SITE.maps} target="_blank" rel="noopener noreferrer">Get Directions</a></div></div></div></Reveal></section>);
 }
 
@@ -168,6 +168,6 @@ export function Contact() {
 export function CTA() {
   return (<section className="sec"><Reveal><div className="rounded-3xl border border-gold/30 bg-gradient-to-br from-gold/15 via-transparent to-bull/10 p-10 text-center md:p-16">
     <h2 className="h2">Ready to Learn Trading With Structure?</h2>
-    <p className="mx-auto mt-5 max-w-2xl text-white/65">Build your understanding of Price Action, Smart Money Concepts, Blazzing Bull Strategies and Risk Management through our 60-day Forex trading education program.</p>
+    <p className="mx-auto mt-5 max-w-2xl text-white/65">Build your understanding of Price Action, Smart Money Concepts, Blazing Bull Strategies and Risk Management through our 60-day Forex trading education program.</p>
     <div className="mt-8 flex flex-wrap justify-center gap-4"><button className="btn-gold" onClick={() => go('register')}>Register Now</button><button className="btn-line" onClick={() => go('contact')}>Contact Us</button></div></div></Reveal></section>);
 }

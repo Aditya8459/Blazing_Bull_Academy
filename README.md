@@ -1,4 +1,4 @@
-# Blazzing Bull Academy
+# Blazing Bull Academy
 
 This is a Vite/React frontend. Contact enquiries and registrations are sent from the browser through EmailJS; no Node.js API server or MongoDB database is required.
 
